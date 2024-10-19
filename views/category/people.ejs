@@ -1,0 +1,192 @@
+<%- include("../partials/header.ejs") %>
+
+
+    <div class="section">
+      <div class="container">
+        <div class="grid-column">
+          <div class="section-title-wrapper">
+            <h2 class="heading large">People</h2>
+            <div class="spacer _16 w-condition-invisible"></div>
+            <p class="w-condition-invisible w-dyn-bind-empty"></p>
+            <div class="spacer _48"></div>
+          </div>
+          <div class="posts-wrapper w-dyn-list">
+            <div role="list" class="posts-grid all-articles w-dyn-items">
+              
+              <% posts.forEach(post => { %>
+                <div role="listitem" class="post-item w-dyn-item">
+                  <a
+                    aria-label="Blog post link"
+                    href="<%= post.link %>"
+                    class="post-link w-inline-block"
+                    ><div class="post-item-content">
+                      <div class="post-item-image-wrapper">
+                        <img
+                          src="<%= post.imgSrc %>"
+                          loading="lazy"
+                          alt="<%= post.title %>"
+                          class="post-item-image"
+                        />
+                      </div>
+                      <div class="top">
+                        <div class="divider-line"></div>
+                        <div class="post-top-details-wrapper">
+                          <div class="post-detail-tag"><%= post.category %></div>
+                          <div class="post-detail-tag"><%= post.date %></div>
+                        </div>
+                      </div>
+                      <div class="bottom">
+                        <h2 class="heading regular">
+                          <%= post.title %>
+                        </h2>
+                        <div class="text-color-4">
+                          <div class="paragraph small">
+                            <%= post.description %>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              <% }) %>
+
+              <div role="listitem" class="post-item w-dyn-item">
+                <a
+                  aria-label="Blog post link"
+                  href="/blogs/minds-behind-the-machines"
+                  class="post-link w-inline-block"
+                  ><div class="post-item-content">
+                    <div class="post-item-image-wrapper">
+                      <img
+                        src="../images/olivia-blog-cover-image-9.jpg"
+                        loading="lazy"
+                        alt="Tech innovators: The minds behind the machines"
+                        sizes="(max-width: 767px) 83vw, (max-width: 991px) 42vw, 33vw"
+                        srcset="
+                          ../images/olivia-blog-cover-image-9-p-500.jpg   500w,
+                          ../images/olivia-blog-cover-image-9-p-800.jpg   800w,
+                          ../images/olivia-blog-cover-image-9-p-1080.jpg 1080w,
+                          ../images/olivia-blog-cover-image-9.jpg        1500w
+                        "
+                        class="post-item-image"
+                      />
+                    </div>
+                    <div class="top">
+                      <div class="divider-line"></div>
+                      <div class="post-top-details-wrapper">
+                        <div class="post-detail-tag">People</div>
+                        <div class="post-detail-tag">Jul 3</div>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <h2 class="heading regular">
+                        Tech innovators: The minds behind the machines
+                      </h2>
+                      <div class="text-color-4">
+                        <div class="paragraph small">
+                          Profiles of pioneering individuals who are driving
+                          technological advancements and innovation.
+                        </div>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div role="listitem" class="post-item w-dyn-item">
+                <a
+                  aria-label="Blog post link"
+                  href="/blogs/stories-of-community-champions"
+                  class="post-link w-inline-block"
+                  ><div class="post-item-content">
+                    <div class="post-item-image-wrapper">
+                      <img
+                        src="../images/olivia-blog-cover-image-4.jpg"
+                        loading="lazy"
+                        alt="Everyday heroes: Stories of community champions"
+                        sizes="(max-width: 767px) 83vw, (max-width: 991px) 42vw, 33vw"
+                        srcset="
+                          ../images/olivia-blog-cover-image-4-p-500.jpg   500w,
+                          ../images/olivia-blog-cover-image-4-p-800.jpg   800w,
+                          ../images/olivia-blog-cover-image-4-p-1080.jpg 1080w,
+                          ../images/olivia-blog-cover-image-4.jpg        1500w
+                        "
+                        class="post-item-image"
+                      />
+                    </div>
+                    <div class="top">
+                      <div class="divider-line"></div>
+                      <div class="post-top-details-wrapper">
+                        <div class="post-detail-tag">People</div>
+                        <div class="post-detail-tag">Jul 3</div>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <h2 class="heading regular">
+                        Everyday heroes: Stories of community champions
+                      </h2>
+                      <div class="text-color-4">
+                        <div class="paragraph small">
+                          Celebrating ordinary people who make extraordinary
+                          contributions to their communities.
+                        </div>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section background-primary">
+      <div class="container">
+        <div class="email-subscribe-wrapper">
+          <div class="text-box _600px">
+            <h2 class="heading large text-color-background-1">
+              Get the best sent to your inbox, every month
+            </h2>
+          </div>
+          <div class="form-block w-form">
+            <form
+              method="get"
+              name="email-form"
+              data-name="Email Form"
+              id="email-form"
+              class="email-form-wrapper"
+              data-wf-page-id="637b4af631bc126a51d63774"
+              data-wf-element-id="a6021739-06e5-b358-1ee7-0a9f3cb3a2f0"
+            >
+              <input
+                class="text-field no-border w-input"
+                maxlength="256"
+                name="Email"
+                data-name="Email"
+                placeholder="Enter your email"
+                type="email"
+                id="Email"
+                required=""
+              /><input
+                type="submit"
+                data-wait="Submitting..."
+                class="button-secondary w-button"
+                value="Subscribe"
+              />
+            </form>
+            <div class="form-success w-form-done">
+              <div>Thanks a lot for subscribing!</div>
+            </div>
+            <div class="form-error w-form-fail">
+              <div>Something went wrong! Please try again</div>
+            </div>
+            <div class="spacer _16"></div>
+            <div class="paragraph small text-color-background-2">
+              Once monthly, no spam
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <%- include("../partials/footer.ejs") %>
