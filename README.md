@@ -1,3 +1,7 @@
 # blog_website-backend-pulse
 
-Since GithubPages can't work with Express servers and EJS, I uploaded the website on render.com instead. Here's the link to the website: https://blog-website-backend-pulse.onrender.com
+A blog platform where anyone can post articles, built with **EJS**, **CSS**, **JavaScript**, **Node.js**, **Express**, **body-parser**, and **method-override**.
+
+Since GitHub Pages doesn't support Express servers or EJS, the website is hosted on Render. Please note that it may take up to **60 seconds** to load on the free-tier account.
+
+[View live](https://blog-website-backend-pulse.onrender.com)
